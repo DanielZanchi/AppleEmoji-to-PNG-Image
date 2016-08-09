@@ -11,6 +11,8 @@
 		30897AE51D57D387000E3DDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30897AE41D57D387000E3DDF /* ViewController.swift */; };
 		30897AE71D57D387000E3DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30897AE61D57D387000E3DDF /* Assets.xcassets */; };
 		30897AEA1D57D387000E3DDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30897AE81D57D387000E3DDF /* Main.storyboard */; };
+		308E587D1D59DB9A006CF618 /* NSImage+SavePNG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308E587C1D59DB9A006CF618 /* NSImage+SavePNG.swift */; };
+		308E587F1D59DC10006CF618 /* String+toImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308E587E1D59DC10006CF618 /* String+toImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		30897AE61D57D387000E3DDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30897AE91D57D387000E3DDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30897AEB1D57D387000E3DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		308E587C1D59DB9A006CF618 /* NSImage+SavePNG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSImage+SavePNG.swift"; sourceTree = "<group>"; };
+		308E587E1D59DC10006CF618 /* String+toImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+toImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				30897AE21D57D387000E3DDF /* AppDelegate.swift */,
 				30897AE41D57D387000E3DDF /* ViewController.swift */,
+				308E587E1D59DC10006CF618 /* String+toImage.swift */,
+				308E587C1D59DB9A006CF618 /* NSImage+SavePNG.swift */,
 				30897AE61D57D387000E3DDF /* Assets.xcassets */,
 				30897AE81D57D387000E3DDF /* Main.storyboard */,
 				30897AEB1D57D387000E3DDF /* Info.plist */,
@@ -133,6 +139,8 @@
 			files = (
 				30897AE51D57D387000E3DDF /* ViewController.swift in Sources */,
 				30897AE31D57D387000E3DDF /* AppDelegate.swift in Sources */,
+				308E587D1D59DB9A006CF618 /* NSImage+SavePNG.swift in Sources */,
+				308E587F1D59DC10006CF618 /* String+toImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +283,7 @@
 				30897AF01D57D387000E3DDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
