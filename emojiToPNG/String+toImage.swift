@@ -10,7 +10,7 @@ import Foundation
 import Cocoa
 
 extension String {
-    func image(mySize: CGFloat) -> NSImage {
+    func image(_ mySize: CGFloat) -> NSImage {
         let size = CGSize(width: mySize, height: mySize)
         let image = NSImage(size: size)
         
@@ -19,13 +19,14 @@ extension String {
         image.addRepresentation(rep!)
         image.lockFocus()
         
-        NSColor.clearColor().set()
-        let rect = NSMakeRect(0, 4, size.width, size.height)
-        let ctx = NSGraphicsContext.currentContext()?.CGContext
-        CGContextClearRect(ctx, rect)
-        CGContextSetFillColorWithColor(ctx, NSColor.clearColor().CGColor)
-        CGContextFillRect(ctx, rect)
-        (self as NSString).drawInRect(rect, withAttributes: [NSFontAttributeName: NSFont.systemFontOfSize(mySize)])
+        NSColor.clear.set()
+//        let rect = NSMakeRect(0, 4, size.width, size.height)
+        let rect = NSMakeRect(0, 0, size.width, size.height)
+        let ctx = NSGraphicsContext.current()?.cgContext
+        ctx?.clear(rect)
+        ctx?.setFillColor(NSColor.clear.cgColor)
+        ctx?.fill(rect)
+        (self as NSString).draw(in: rect, withAttributes: [NSFontAttributeName: NSFont.systemFont(ofSize: mySize-3)])
         
         image.unlockFocus()
         

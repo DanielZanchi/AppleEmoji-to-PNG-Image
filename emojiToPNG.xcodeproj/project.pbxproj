@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300D227F1DD4F79B00211CF5 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300D227E1DD4F79B00211CF5 /* Strings.swift */; };
 		30897AE31D57D387000E3DDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30897AE21D57D387000E3DDF /* AppDelegate.swift */; };
 		30897AE51D57D387000E3DDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30897AE41D57D387000E3DDF /* ViewController.swift */; };
 		30897AE71D57D387000E3DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30897AE61D57D387000E3DDF /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		300D227E1DD4F79B00211CF5 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		30897ADF1D57D387000E3DDF /* emojiToPNG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = emojiToPNG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30897AE21D57D387000E3DDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30897AE41D57D387000E3DDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				30897AE21D57D387000E3DDF /* AppDelegate.swift */,
 				30897AE41D57D387000E3DDF /* ViewController.swift */,
+				300D227E1DD4F79B00211CF5 /* Strings.swift */,
 				308E587E1D59DC10006CF618 /* String+toImage.swift */,
 				308E587C1D59DB9A006CF618 /* NSImage+SavePNG.swift */,
 				30897AE61D57D387000E3DDF /* Assets.xcassets */,
@@ -99,6 +102,7 @@
 				TargetAttributes = {
 					30897ADE1D57D387000E3DDF = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -139,6 +143,7 @@
 			files = (
 				30897AE51D57D387000E3DDF /* ViewController.swift in Sources */,
 				30897AE31D57D387000E3DDF /* AppDelegate.swift in Sources */,
+				300D227F1DD4F79B00211CF5 /* Strings.swift in Sources */,
 				308E587D1D59DB9A006CF618 /* NSImage+SavePNG.swift in Sources */,
 				308E587F1D59DC10006CF618 /* String+toImage.swift in Sources */,
 			);
@@ -249,6 +254,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DanielZanchi.emojiToPNG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -261,6 +267,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DanielZanchi.emojiToPNG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

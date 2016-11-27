@@ -10,10 +10,10 @@ import Cocoa
 import Foundation
 
 extension NSImage {
-    var imagePNGRepresentation: NSData {
-        return NSBitmapImageRep(data: TIFFRepresentation!)!.representationUsingType(.NSPNGFileType, properties: [:])!
+    var imagePNGRepresentation: Data {
+        return NSBitmapImageRep(data: tiffRepresentation!)!.representation(using: .PNG, properties: [:])!
     }
-    func savePNG(path:String) -> Bool {
-        return imagePNGRepresentation.writeToFile(path, atomically: true)
+    func savePNG(_ path:String) -> Bool {
+        return ((try? imagePNGRepresentation.write(to: URL(fileURLWithPath: path), options: [.atomic])) != nil)
     }
 }
